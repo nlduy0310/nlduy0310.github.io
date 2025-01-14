@@ -1,1 +1,196 @@
-my github page
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Duy's Portfolio</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Google Icons -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on,mail,code"
+        />
+        <!-- FontAwesome -->
+        <script
+            src="https://kit.fontawesome.com/a52237b1aa.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <!-- Introduction -->
+        <div class="introduction-wrapper card-shadow">
+            <!-- introduction & profile pic -->
+            <div>
+                <!-- name & description -->
+                <div class="name-description">
+                    <div class="name">Nguyen Le Duy</div>
+                    <div class="self-description">
+                        Hi there! 👋 I'm a recent IT graduate based in Ho Chi
+                        Minh City,<br />
+                        focusing on backend and 3D development. Check out my
+                        portfolio below!
+                    </div>
+                </div>
+                <!-- pic -->
+                <div class="profile-pic select-none">
+                    <img src="./assets/dog-waving.gif" />
+                </div>
+            </div>
+            <!-- social links -->
+
+            <div class="socials-wrapper">
+                <div class="social-chip">
+                    <i class="social-icon fa-solid fa-location-dot"></i>
+                    <span class="social-text">Ho Chi Minh City</span>
+                </div>
+                <a
+                    class="remove-link-style"
+                    href="mailto:nlduy0310@gmail.com"
+                    target="_blank"
+                >
+                    <div
+                        class="social-chip"
+                        onclick="mailto:nlduy0310@gmail.com"
+                    >
+                        <i class="social-icon fa-regular fa-envelope"></i>
+                        <span class="social-text">nlduy0310@gmail.com</span>
+                    </div>
+                </a>
+                <a
+                    href="https://github.com/nlduy0310"
+                    class="remove-link-style"
+                    target="_blank"
+                >
+                    <div class="social-chip">
+                        <i class="social-icon fa-brands fa-github"></i>
+                        <span class="social-text">nlduy0310</span>
+                    </div>
+                </a>
+                <a
+                    href="https://linkedin.com/in/nlduy0310"
+                    class="remove-link-style"
+                    target="_blank"
+                >
+                    <div class="social-chip">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                        <span class="social-text">nlduy0310</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- interests & education -->
+        <!-- technical stack -->
+        <!-- open to work -->
+        <!-- projects -->
+    </body>
+    <style>
+        .introduction-wrapper {
+            margin: 2rem;
+            padding: 1.5rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .introduction-wrapper > div:nth-child(1) {
+            padding: 2rem 2rem;
+            display: grid;
+            grid-template-columns: 6fr 4fr;
+            grid-column-gap: 2rem;
+        }
+
+        .name-description {
+            text-align: right;
+        }
+
+        .name {
+            font-family: "Audiowide", monospace;
+            font-size: 5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .self-description {
+            text-wrap: nowrap;
+            font-family: "Poppins", monospace;
+            font-size: 1.75rem;
+            font-weight: normal;
+        }
+
+        .profile-pic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-pic > img {
+            width: 14rem;
+            border-radius: 50%;
+            border: 5px dashed rgb(100, 100, 100);
+        }
+
+        .socials-wrapper {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .social-chip {
+            background: lightgray;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .social-chip:hover {
+            transform: translateY(-20%);
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+        }
+        .social-text {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+    </style>
+    <!-- Globals -->
+    <style>
+        .body {
+            font-family: "Poppins", monospace;
+        }
+    </style>
+    <!-- utility classes -->
+    <style>
+        .select-none {
+            user-select: none;
+        }
+
+        .card-shadow {
+            box-shadow:
+                0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.06);
+        }
+
+        .remove-link-style {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</html>
