@@ -34,9 +34,8 @@
                     <div class="name">Nguyen Le Duy</div>
                     <div class="self-description">
                         Hi there! 👋 I'm a recent IT graduate based in Ho Chi
-                        Minh City,<br />
-                        focusing on backend and 3D development. Check out my
-                        portfolio below!
+                        Minh City.<br />
+                        Check out my portfolio below!
                     </div>
                 </div>
                 <!-- pic -->
@@ -87,10 +86,68 @@
             </div>
         </div>
         <!-- interests & education -->
+        <div class="ie-wrapper">
+            <div class="interests card-shadow">
+                <h2 class="title">INTERESTS</h2>
+                <ul>
+                    <li>Backend Development</li>
+                    <li>3D Development with Unity (AR/VR)</li>
+                </ul>
+            </div>
+            <div class="education card-shadow">
+                <h2 class="title">EDUCATION</h2>
+                <div class="content">
+                    Bachelor of Information Technology, Honors Program<br />
+                    Ho Chi Minh University of Science (2020 - 2024)
+                </div>
+            </div>
+        </div>
         <!-- technical stack -->
+        <div class="tech-stack card-shadow">
+            <h2 class="title">TECHNICAL STACK</h2>
+            <div class="tech-categories">
+                <div class="category-languages">
+                    <div class="category-title">Languages</div>
+                    <div class="category-bubbles">
+                        <img
+                            src="./assets/tech-stack/TypeScript.svg"
+                            title="TypeScript"
+                        />
+                        <img src="./assets/tech-stack/Go.svg" title="Golang" />
+                        <img src="./assets/tech-stack/CSharp.svg" title="C#" />
+                    </div>
+                </div>
+                <div class="categories-separator"></div>
+                <div class="category-databases">
+                    <div class="category-title">Databases</div>
+                    <div class="category-bubbles">
+                        <img
+                            src="assets/tech-stack/postgresql.svg"
+                            title="PostgreSQL"
+                        />
+                        <img
+                            src="assets/tech-stack/mongodb.svg"
+                            title="MongoDB"
+                        />
+                    </div>
+                </div>
+                <div class="categories-separator"></div>
+                <div class="category-others">
+                    <div class="category-title">Others</div>
+                    <div class="category-bubbles">
+                        <img src="assets/tech-stack/git.svg" title="Git" />
+                        <img
+                            src="assets/tech-stack/docker.svg"
+                            title="Docker"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- open to work -->
         <!-- projects -->
     </body>
+    <!-- Introduction stylings -->
     <style>
         .introduction-wrapper {
             margin: 2rem;
@@ -168,6 +225,98 @@
         .social-text {
             font-size: 1.25rem;
             font-weight: 300;
+        }
+    </style>
+    <!-- Interest & education stylings -->
+    <style>
+        .ie-wrapper {
+            margin: 2rem;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        .ie-wrapper > div {
+            width: 100%;
+            border-radius: 2rem;
+        }
+
+        .interests,
+        .education {
+            padding: 1rem 4rem;
+        }
+
+        .interests > .title,
+        .education > .title {
+            margin: 1rem 0;
+            font-size: xx-large;
+        }
+
+        .interests > ul {
+            font-size: x-large;
+            margin: 1.5rem 0;
+        }
+
+        .education > .content {
+            font-size: x-large;
+            margin: 1.5rem 0;
+        }
+    </style>
+    <!-- Technical stack stylings -->
+    <style>
+        .tech-stack {
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .tech-stack > .title {
+            font-size: xx-large;
+        }
+
+        .tech-stack > .tech-categories {
+            display: flex;
+            flex-direction: row;
+            gap: 8rem;
+        }
+
+        .category-languages,
+        .category-databases,
+        .category-others {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .tech-stack .category-title {
+            font-size: x-large;
+        }
+
+        .category-bubbles {
+            display: flex;
+            flex-direction: row;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .category-bubbles > * {
+            width: 4rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .category-bubbles > *:hover {
+            transform: scale(120%);
+        }
+
+        .categories-separator {
+            width: 2px;
+            background-color: black;
         }
     </style>
     <!-- Globals -->
