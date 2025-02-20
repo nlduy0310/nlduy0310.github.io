@@ -1,0 +1,49 @@
+.back-to-index {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.project-name {
+    text-align: center;
+}
+
+.section {
+    width: 100%;
+    margin: 2rem 6rem;
+}
+
+.section > .title {
+    transform: translateX(-2rem);
+}
+
+.section p,
+.section span,
+.section a {
+    font-size: large;
+}
+
+.members-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.media-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+}
+
+/* Utility classes */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}

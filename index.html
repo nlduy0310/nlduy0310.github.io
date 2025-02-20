@@ -15,7 +15,7 @@
         <!-- Google Icons -->
         <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on,mail,code"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on,mail,code,language,head_mounted_device"
         />
         <!-- FontAwesome -->
         <script
@@ -146,6 +146,64 @@
         </div>
         <!-- open to work -->
         <!-- projects -->
+        <div class="projects-outer card-shadow">
+            <h1>PROJECTS</h1>
+            <div class="projects-flexbox">
+                <div class="project-eShop" title="An ecommerce website">
+                    <i class="fa-solid fa-globe" title="Website"></i>
+                    <span class="nowrap select-none">eShop</span>
+                    <div class="foot-slider"></div>
+                </div>
+                <div
+                    class="project-newsapp"
+                    title="A news website similar to thanhnien.vn"
+                >
+                    <i class="fa-solid fa-globe" title="Website"></i>
+                    <span class="nowrap select-none">News Site</span>
+                    <div class="foot-slider"></div>
+                </div>
+                <div
+                    class="project-movies-review"
+                    title="A movies review site similar to imdb"
+                >
+                    <i class="fa-solid fa-globe" title="Website"></i>
+                    <span class="nowrap select-none">Movies Review Site</span>
+                    <div class="foot-slider"></div>
+                </div>
+                <div
+                    class="project-tasks-management"
+                    title="A mini project to try out ReactJS and TailwindCSS"
+                >
+                    <i class="fa-solid fa-globe" title="Website"></i>
+                    <span class="nowrap select-none"
+                        >Tasks Management Site</span
+                    >
+                    <div class="foot-slider"></div>
+                </div>
+                <div
+                    class="project-vr-fire-trainer"
+                    title="A VR application that simulate a fire emergency"
+                >
+                    <i
+                        class="fa-solid fa-vr-cardboard"
+                        title="VR application"
+                    ></i>
+                    <span class="nowrap select-none">VR Fire Trainer</span>
+                    <div class="foot-slider"></div>
+                </div>
+                <div
+                    class="project-mr-fire-trainer"
+                    title="An MR application that simulate a fire emergency in a real-world office"
+                >
+                    <i
+                        class="fa-solid fa-vr-cardboard"
+                        title="MR application"
+                    ></i>
+                    <span class="nowrap select-none">MR Fire Trainer</span>
+                    <div class="foot-slider"></div>
+                </div>
+            </div>
+        </div>
     </body>
     <!-- Introduction stylings -->
     <style>
@@ -188,6 +246,7 @@
             align-items: center;
             justify-content: center;
         }
+
         .profile-pic > img {
             width: 14rem;
             border-radius: 50%;
@@ -319,6 +378,68 @@
             background-color: black;
         }
     </style>
+    <!-- Projects stylings -->
+    <style>
+        .projects-outer {
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .projects-flexbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 5rem;
+            justify-content: center;
+        }
+
+        /* project containers */
+        .projects-flexbox > [class^="project-"] {
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+            transition: scale 300ms ease-in-out;
+            cursor: pointer;
+        }
+
+        .projects-flexbox [class^="project-"]:hover {
+            scale: 110%;
+        }
+
+        .projects-flexbox [class^="project-"]:hover > .foot-slider {
+            transform: translateX(0);
+        }
+
+        /* project icons */
+        .projects-flexbox > [class^="project-"] > i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: lightslategrey;
+        }
+
+        /* project names */
+        .projects-flexbox > [class^="project-"] > span {
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        .foot-slider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0.3rem;
+            background: black;
+            transform: translateX(-100%);
+            transition: transform 150ms ease-in-out;
+        }
+    </style>
     <!-- Globals -->
     <style>
         .body {
@@ -341,5 +462,11 @@
             text-decoration: none;
             color: black;
         }
+
+        .nowrap {
+            text-wrap: nowrap;
+        }
     </style>
+
+    <script src="index.js"></script>
 </html>
